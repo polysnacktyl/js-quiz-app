@@ -1,0 +1,139 @@
+
+.wrapper {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  p {
+      text-align: center;
+      font-family: sans-serif;
+  }
+  
+  body {
+    font-family: sans-serif;
+    background-color: #dfdfdf;
+  }
+  
+  h2 {
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: white;
+    border-radius: 7px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
+  }
+  
+  li {
+    display: block;
+  }
+  
+  
+  .quiz-box {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  header {
+    text-align: center;
+    padding: 25px;
+    color: hsl(206, 17%, 28%);
+    
+  }
+  
+  .quiz {
+    background-color: #c1fffc;
+    border-radius: 15px;
+    border-width: 1px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
+    color: hsl(206, 17%, 28%);
+    font-size: 18px;
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 35px;
+    padding-top:10px;
+    padding-bottom: 10px;
+  }
+  
+  #next {
+    text-align: right;
+  }
+  
+  .quiz-header::after {
+    content: " ";
+    display: block;
+    width: 100%;
+    height: 2px;
+  }
+  
+  .quiz-body {
+    min-height: 100px;
+  }
+  
+  #nextquest {
+    border: none;
+    background-color: rgb(143, 143, 143);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px 0px;
+    color: hsl(0, 0%, 100%);
+    display: inline-block;
+    font-size: 30px;
+    font-variant: small-caps;
+    line-height: 22px;
+    margin: 15px 0px 0px 0px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
+    visibility: hidden;
+  }
+  
+  #quiztions, .quiztions {
+      min-height: 400px;
+      border-radius: 10px;
+      border: solid 1px #e7e9eb;
+      box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
+      padding: 27px;
+      background-color: white;
+  }
+  
+  .quiz-footer {
+    text-align: center;
+  }
+  
+  .poke {
+    border: none;
+    background-color: rgb(143, 143, 143);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px 0px;
+    color: hsl(0, 0%, 100%);
+    display: inline-block;
+    font-size: 30px;
+    font-variant: small-caps;
+    line-height: 22px;
+    margin: 15px 16px 5px 20px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
+  }
+  
+  #quiztions {
+    appearance: none;
+    border: none;
+    display: block;
+    width: 100%;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 85px;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 2px dashed #c0c7cf;
+    border-radius: 6px;
+    resize: none;
+    overflow: hidden;
+  }
+  
+
+  
