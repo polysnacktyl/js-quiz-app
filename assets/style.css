@@ -15,15 +15,22 @@
     background-color: #dfdfdf;
   }
   
-  h2 {
-    text-align: center;
-    padding-top: 15px;
-    padding-bottom: 15px;
+  h3 {
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    min-height: 30px;
     background-color: white;
     border-radius: 7px;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
   }
   
+  ul{
+    line-height: 2;
+    font-size: 24px;
+  }
+
   li {
     display: block;
   }

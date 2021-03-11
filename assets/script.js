@@ -3,10 +3,10 @@ var quiztions = [
   {
     question: "commonly used data types do not include:",
     answers: {
-      a: "strings",
-      b: "booleans",
-      c: "alerts",
-      d: "numbers",
+      a: " strings",
+      b: " booleans",
+      c: " alerts",
+      d: " numbers",
     },
     correctAnswer: "c"
   },
@@ -14,10 +14,10 @@ var quiztions = [
   {
     question: "If/else statement condtions are enclosed in______.",
     answers: {
-      a: "quotes",
-      b: "curly brackets",
-      c: "parentheses",
-      d: "square brackets",
+      a: " quotes",
+      b: " curly brackets",
+      c: " parentheses",
+      d: " square brackets",
     },
     correctAnswer: "c"
   },
@@ -25,10 +25,10 @@ var quiztions = [
   {
     question: "Arrays in JavaScript can be used to store ____",
     answers: {
-      a: "numbers and strings",
-      b: "other arrays",
-      c: "booleans",
-      d: "all of the above",
+      a: " numbers and strings",
+      b: " other arrays",
+      c: " booleans",
+      d: " all of the above",
     },
     correctAnswer: "d"
   },
@@ -36,10 +36,10 @@ var quiztions = [
   {
     question: "String values must be enclosed within ____ when being assigned to variables.",
     answers: {
-      a: "commas",
-      b: "curly brackets",
-      c: "quotes",
-      d: "parentheses",
+      a: " commas",
+      b: " curly brackets",
+      c: " quotes",
+      d: " parentheses",
     },
     correctAnswer: "c"
   },
@@ -47,14 +47,16 @@ var quiztions = [
   {
     question: "A very useful tool used during development and debugging for printing content to the debugger is:",
     answers: {
-      a: "JavaScript",
-      b: "terminal/bash",
-      c: "for loops",
-      d: "console.log",
+      a: " JavaScript",
+      b: " terminal/bash",
+      c: " for loops",
+      d: " console.log",
     },
     correctAnswer: "d"
   }
 ];
+
+setTime() 
 
 //setting variables for making javascript references to html elements 
 var quizSpace = document.getElementById("quiz-space");
@@ -84,36 +86,9 @@ function checkAnswer() {
   }
 }
 
-
-var timeEl = document.querySelector(".time");
-var mainEl = document.getElementById("timeHead");
-
-var secondsLeft = 30;
-
-function setTime() {
-  var timerInterval = setInterval(function() {
-    secondsLeft--;
-    timeEl.textContent = secondsLeft + " seconds left.";
-
-    if(secondsLeft === 0) {
-      
-      clearInterval(timerInterval);
-      
-      sendMessage();
-    }
-
-  }, 1000);
-}
-
-function sendMessage() {
-  timeEl.textContent = "time's up!";
-}
-
-
 //starts the game when user clicks start button the button hides, the next-question button appears, 
 //first question elements are generated and populate the quizSpace
 function showQuestion() {
-  setTime() 
   document.getElementById('startquizbutton').style.visibility = 'hidden';
   document.getElementById('nextquest').style.visibility = 'visible';
 
@@ -189,3 +164,27 @@ function nextQuestion() {
   checkAnswer();
 }
 
+
+var timeEl = document.querySelector(".time");
+var mainEl = document.getElementById("timeHead");
+
+var secondsLeft = 30;
+
+function setTime() {
+  var timerInterval = setInterval(function() {
+    secondsLeft--;
+    timeEl.textContent = secondsLeft + " seconds left.";
+
+    if(secondsLeft === 0) {
+      
+      clearInterval(timerInterval);
+      
+      sendMessage();
+    }
+
+  }, 1000);
+}
+
+function sendMessage() {
+  timeEl.textContent = "time's up!";
+}
