@@ -56,8 +56,6 @@ var quiztions = [
   }
 ];
 
-setTime() 
-
 //setting variables for making javascript references to html elements 
 var quizSpace = document.getElementById("quiz-space");
 var startQuiz = document.getElementById("startquizbutton");
@@ -66,6 +64,7 @@ var nextButton = document.getElementById("nextquest");
 //eventlisteners for buttons
 nextButton.addEventListener("click", nextQuestion);
 startQuiz.addEventListener("click", showQuestion);
+startQuiz.addEventListener("click", setTime);
 
 //variables for keeping track of question, game score
 var currentQuestion = 0;
