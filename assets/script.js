@@ -188,3 +188,6 @@ function checkAnswer() {
     timeEl.textContent = "time's up! you scored "; + currentScore + " out of " + quiztions.length;
     document.getElementById('nextquest').style.visibility = 'hidden';
   }
+
+
+  //note-to-self: README, "last question" function, score/initials save-ability, swap radio buttons for submit-ables 
